@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyledHeader } from './styles';
+import HeaderCartButton from '../HeaderCartButton';
+import { StyledHeader, MainImage } from './styles';
 import mealsImage from '../../../assets/meals.jpg';
 
 const Header = () => {
@@ -7,11 +8,15 @@ const Header = () => {
     <>
       <StyledHeader>
         <h1>ReactMeals</h1>
-        <button>Cart</button>
+        <HeaderCartButton>Cart</HeaderCartButton>
       </StyledHeader>
-      <div>
-        <img src={mealsImage} alt='A table full of delicious food!' />
-      </div>
+      <MainImage>
+        <img
+          className='main-image'
+          src={mealsImage}
+          alt='A table full of delicious food!'
+        />
+      </MainImage>
     </>
   );
 };

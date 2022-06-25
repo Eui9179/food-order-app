@@ -1,5 +1,16 @@
+import React from 'react';
+import Header from './components/Layout/Header';
+import Meals from './components/Meals';
+
 function App() {
-  return <div className="App"></div>;
+  return (
+    <>
+      <Header />
+      <main>
+        <Meals />
+      </main>
+    </>
+  );
 }
 
 export default App;
